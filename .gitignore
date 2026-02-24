@@ -65,3 +65,17 @@ data/cnpj/reference/*
 # Audit artifacts
 audit-results/
 scripts/audit-prompts/
+
+# Screenshots and images (large binary files)
+*.png
+
+# Playwright MCP cache
+.playwright-mcp/
+
+# Claude plans
+.claude/plans/
+
+# Data directories (downloaded datasets)
+data/comprasnet/
+data/rais/
+data/tse/
