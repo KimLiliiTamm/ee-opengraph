@@ -2,6 +2,9 @@
 // Aggregates across SAME_AS equivalent Person nodes
 MATCH (e)
 WHERE elementId(e) = $entity_id
+  AND (e:Person OR e:Company OR e:Contract OR e:Sanction OR e:Election
+       OR e:Amendment OR e:Finance OR e:Embargo OR e:Health OR e:Education
+       OR e:Convenio OR e:LaborStats OR e:PublicOffice)
 WITH e, labels(e) AS lbls
 // Collect equivalent nodes: self + SAME_AS neighbors (up to 2 hops for chains)
 OPTIONAL MATCH (e)-[:SAME_AS*1..2]-(other)

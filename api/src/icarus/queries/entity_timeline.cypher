@@ -2,6 +2,9 @@
 // Includes events from SAME_AS equivalent nodes
 MATCH (e)
 WHERE elementId(e) = $entity_id
+  AND (e:Person OR e:Company OR e:Contract OR e:Sanction OR e:Election
+       OR e:Amendment OR e:Finance OR e:Embargo OR e:Health OR e:Education
+       OR e:Convenio OR e:LaborStats OR e:PublicOffice)
 WITH e
 OPTIONAL MATCH (e)-[:SAME_AS*1..2]-(other)
 WITH e, collect(DISTINCT other) AS others
