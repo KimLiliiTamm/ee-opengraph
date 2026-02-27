@@ -44,6 +44,30 @@ CREATE CONSTRAINT convenio_id_unique IF NOT EXISTS
 CREATE CONSTRAINT laborstats_id_unique IF NOT EXISTS
   FOR (l:LaborStats) REQUIRE l.stats_id IS UNIQUE;
 
+CREATE CONSTRAINT inquiry_id_unique IF NOT EXISTS
+  FOR (i:Inquiry) REQUIRE i.inquiry_id IS UNIQUE;
+
+CREATE CONSTRAINT inquiry_requirement_id_unique IF NOT EXISTS
+  FOR (r:InquiryRequirement) REQUIRE r.requirement_id IS UNIQUE;
+
+CREATE CONSTRAINT inquiry_session_id_unique IF NOT EXISTS
+  FOR (s:InquirySession) REQUIRE s.session_id IS UNIQUE;
+
+CREATE CONSTRAINT municipal_bid_id_unique IF NOT EXISTS
+  FOR (b:MunicipalBid) REQUIRE b.municipal_bid_id IS UNIQUE;
+
+CREATE CONSTRAINT municipal_contract_id_unique IF NOT EXISTS
+  FOR (c:MunicipalContract) REQUIRE c.municipal_contract_id IS UNIQUE;
+
+CREATE CONSTRAINT municipal_bid_item_id_unique IF NOT EXISTS
+  FOR (i:MunicipalBidItem) REQUIRE i.municipal_item_id IS UNIQUE;
+
+CREATE CONSTRAINT municipal_gazette_act_id_unique IF NOT EXISTS
+  FOR (a:MunicipalGazetteAct) REQUIRE a.municipal_gazette_act_id IS UNIQUE;
+
+CREATE CONSTRAINT judicial_case_id_unique IF NOT EXISTS
+  FOR (j:JudicialCase) REQUIRE j.judicial_case_id IS UNIQUE;
+
 // ── Indexes ─────────────────────────────────────────────
 CREATE INDEX person_name IF NOT EXISTS
   FOR (p:Person) ON (p.name);
@@ -161,10 +185,34 @@ CREATE INDEX person_servidor_id IF NOT EXISTS
 CREATE INDEX public_office_org IF NOT EXISTS
   FOR (po:PublicOffice) ON (po.org);
 
+CREATE INDEX inquiry_name IF NOT EXISTS
+  FOR (i:Inquiry) ON (i.name);
+
+CREATE INDEX inquiry_kind_house IF NOT EXISTS
+  FOR (i:Inquiry) ON (i.kind, i.house);
+
+CREATE INDEX inquiry_requirement_date IF NOT EXISTS
+  FOR (r:InquiryRequirement) ON (r.date);
+
+CREATE INDEX inquiry_session_date IF NOT EXISTS
+  FOR (s:InquirySession) ON (s.date);
+
+CREATE INDEX municipal_bid_date IF NOT EXISTS
+  FOR (b:MunicipalBid) ON (b.published_at);
+
+CREATE INDEX municipal_contract_date IF NOT EXISTS
+  FOR (c:MunicipalContract) ON (c.signed_at);
+
+CREATE INDEX municipal_gazette_date IF NOT EXISTS
+  FOR (a:MunicipalGazetteAct) ON (a.published_at);
+
+CREATE INDEX judicial_case_number IF NOT EXISTS
+  FOR (j:JudicialCase) ON (j.case_number);
+
 // ── Fulltext Search Index ───────────────────────────────
 CREATE FULLTEXT INDEX entity_search IF NOT EXISTS
-  FOR (n:Person|Partner|Company|Health|Education|Contract|Amendment|Convenio|Embargo|PublicOffice)
-  ON EACH [n.name, n.razao_social, n.cpf, n.cnpj, n.doc_partial, n.doc_raw, n.cnes_code, n.object, n.contracting_org, n.convenente, n.infraction, n.org, n.function];
+  FOR (n:Person|Partner|Company|Health|Education|Contract|Amendment|Convenio|Embargo|PublicOffice|Inquiry|InquiryRequirement|MunicipalContract|MunicipalBid|MunicipalGazetteAct|JudicialCase)
+  ON EACH [n.name, n.razao_social, n.cpf, n.cnpj, n.doc_partial, n.doc_raw, n.cnes_code, n.object, n.contracting_org, n.convenente, n.infraction, n.org, n.function, n.subject, n.text, n.topic, n.case_number];
 
 // ── User Constraints ────────────────────────────────────
 CREATE CONSTRAINT user_email_unique IF NOT EXISTS

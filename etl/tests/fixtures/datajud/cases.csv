@@ -1,0 +1,3 @@
+judicial_case_id,case_number,court,class,subject,filed_at,status,source_url
+jc-1,0001234-56.2026.8.26.0001,TJSP,CIVEL,Fraude previdenciária,2026-02-01,Ativo,https://datajud/case/1
+jc-2,0009876-54.2026.8.19.0001,TJRJ,CIVEL,Contrato público,2026-02-02,Ativo,https://datajud/case/2

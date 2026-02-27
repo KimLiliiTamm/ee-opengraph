@@ -1,0 +1,3 @@
+municipal_bid_id,numero_processo,cod_ibge,municipio,uf,modalidade,objeto,data_publicacao,ano,valor_estimado,cnpj_fornecedor,url
+bid-1,PROC-001,3550308,SAO PAULO,SP,PREGAO,Compra de medicamentos,2026-01-10,2026,1500000.00,11.222.333/0001-81,https://mides/licitacao/1
+bid-2,PROC-002,3304557,RIO DE JANEIRO,RJ,CONCORRENCIA,Obra de escola,2026-01-20,2026,5000000.00,,https://mides/licitacao/2

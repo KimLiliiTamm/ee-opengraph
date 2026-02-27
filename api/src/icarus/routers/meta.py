@@ -70,8 +70,14 @@ async def database_stats(
         "bcb_penalty_count": record["bcb_penalty_count"] if record else 0,
         "labor_movement_count": record["labor_movement_count"] if record else 0,
         "legal_case_count": record["legal_case_count"] if record else 0,
+        "judicial_case_count": record["judicial_case_count"] if record else 0,
         "cpi_count": record["cpi_count"] if record else 0,
-        "data_sources": 41,
+        "inquiry_requirement_count": record["inquiry_requirement_count"] if record else 0,
+        "inquiry_session_count": record["inquiry_session_count"] if record else 0,
+        "municipal_bid_count": record["municipal_bid_count"] if record else 0,
+        "municipal_contract_count": record["municipal_contract_count"] if record else 0,
+        "municipal_gazette_act_count": record["municipal_gazette_act_count"] if record else 0,
+        "data_sources": 45,
     }
 
     _stats_cache = result
@@ -132,5 +138,25 @@ async def list_sources() -> dict[str, list[dict[str, str]]]:
                 "frequency": "monthly",
             },
             {"id": "senado_cpis", "name": "Senado CPIs", "frequency": "yearly"},
+            {
+                "id": "camara_inquiries",
+                "name": "Câmara (CPIs/CPMIs e Requerimentos)",
+                "frequency": "daily",
+            },
+            {
+                "id": "mides",
+                "name": "MiDES (Licitações/Contratos Municipais)",
+                "frequency": "daily",
+            },
+            {
+                "id": "querido_diario",
+                "name": "Querido Diário (Atos Municipais)",
+                "frequency": "daily",
+            },
+            {
+                "id": "datajud",
+                "name": "CNJ DataJud (Processos Judiciais)",
+                "frequency": "monthly",
+            },
         ]
     }

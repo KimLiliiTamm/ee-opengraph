@@ -1,0 +1,3 @@
+inquiry_id,inquiry_code,name,kind,status,subject,date_start,date_end,source_url
+camara-1,CPI-INSS,CPI DO INSS,CPI,Ativa,Investigar fraudes no INSS,2026-02-10,,https://dadosabertos.camara.leg.br/api/v2/orgaos/1
+camara-2,CPMI-PIX,CPMI DAS EMENDAS PIX,CPMI,Ativa,Investigar emendas pix,2026-02-12,,https://dadosabertos.camara.leg.br/api/v2/orgaos/2

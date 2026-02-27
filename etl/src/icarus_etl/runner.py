@@ -7,6 +7,7 @@ from icarus_etl.pipelines.bcb import BcbPipeline
 from icarus_etl.pipelines.bndes import BndesPipeline
 from icarus_etl.pipelines.caged import CagedPipeline
 from icarus_etl.pipelines.camara import CamaraPipeline
+from icarus_etl.pipelines.camara_inquiries import CamaraInquiriesPipeline
 from icarus_etl.pipelines.ceaf import CeafPipeline
 from icarus_etl.pipelines.cepim import CepimPipeline
 from icarus_etl.pipelines.cnpj import CNPJPipeline
@@ -14,6 +15,7 @@ from icarus_etl.pipelines.comprasnet import ComprasnetPipeline
 from icarus_etl.pipelines.cpgf import CpgfPipeline
 from icarus_etl.pipelines.cvm import CvmPipeline
 from icarus_etl.pipelines.cvm_funds import CvmFundsPipeline
+from icarus_etl.pipelines.datajud import DatajudPipeline
 from icarus_etl.pipelines.datasus import DatasusPipeline
 from icarus_etl.pipelines.dou import DouPipeline
 from icarus_etl.pipelines.eu_sanctions import EuSanctionsPipeline
@@ -22,11 +24,13 @@ from icarus_etl.pipelines.ibama import IbamaPipeline
 from icarus_etl.pipelines.icij import ICIJPipeline
 from icarus_etl.pipelines.inep import InepPipeline
 from icarus_etl.pipelines.leniency import LeniencyPipeline
+from icarus_etl.pipelines.mides import MidesPipeline
 from icarus_etl.pipelines.ofac import OfacPipeline
 from icarus_etl.pipelines.opensanctions import OpenSanctionsPipeline
 from icarus_etl.pipelines.pep_cgu import PepCguPipeline
 from icarus_etl.pipelines.pgfn import PgfnPipeline
 from icarus_etl.pipelines.pncp import PncpPipeline
+from icarus_etl.pipelines.querido_diario import QueridoDiarioPipeline
 from icarus_etl.pipelines.rais import RaisPipeline
 from icarus_etl.pipelines.renuncias import RenunciasPipeline
 from icarus_etl.pipelines.sanctions import SanctionsPipeline
@@ -66,6 +70,7 @@ PIPELINES: dict[str, type] = {
     "cvm": CvmPipeline,
     "cvm_funds": CvmFundsPipeline,
     "camara": CamaraPipeline,
+    "camara_inquiries": CamaraInquiriesPipeline,
     "senado": SenadoPipeline,
     "ceaf": CeafPipeline,
     "cepim": CepimPipeline,
@@ -87,6 +92,9 @@ PIPELINES: dict[str, type] = {
     "un_sanctions": UnSanctionsPipeline,
     "world_bank": WorldBankPipeline,
     "senado_cpis": SenadoCpisPipeline,
+    "mides": MidesPipeline,
+    "querido_diario": QueridoDiarioPipeline,
+    "datajud": DatajudPipeline,
 }
 
 

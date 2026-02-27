@@ -107,7 +107,25 @@ CALL {
   MATCH (lc:LegalCase) RETURN count(lc) AS legal_case_count
 }
 CALL {
+  MATCH (j:JudicialCase) RETURN count(j) AS judicial_case_count
+}
+CALL {
   MATCH (c:CPI) RETURN count(c) AS cpi_count
+}
+CALL {
+  MATCH (ir:InquiryRequirement) RETURN count(ir) AS inquiry_requirement_count
+}
+CALL {
+  MATCH (is:InquirySession) RETURN count(is) AS inquiry_session_count
+}
+CALL {
+  MATCH (mb:MunicipalBid) RETURN count(mb) AS municipal_bid_count
+}
+CALL {
+  MATCH (mc:MunicipalContract) RETURN count(mc) AS municipal_contract_count
+}
+CALL {
+  MATCH (mga:MunicipalGazetteAct) RETURN count(mga) AS municipal_gazette_act_count
 }
 RETURN total_nodes, total_relationships,
        person_count, company_count, health_count,
@@ -123,4 +141,8 @@ RETURN total_nodes, total_relationships,
        municipal_finance_count,
        declared_asset_count, party_membership_count,
        barred_ngo_count, bcb_penalty_count,
-       labor_movement_count, legal_case_count, cpi_count
+       labor_movement_count, legal_case_count,
+       judicial_case_count, cpi_count,
+       inquiry_requirement_count, inquiry_session_count,
+       municipal_bid_count, municipal_contract_count,
+       municipal_gazette_act_count
