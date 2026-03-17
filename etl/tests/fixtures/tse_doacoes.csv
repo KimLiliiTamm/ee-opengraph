@@ -1,0 +1,4 @@
+sq_candidato,cpf_cnpj_doador,nome_doador,valor,ano,nome_candidato,partido,nr_candidato
+100001,11122233344,Pedro Oliveira,1500.50,2024,João da Silva,PL,11
+100001,12345678000199,Empresa ABC Ltda,50000.00,2024,João da Silva,PL,11
+100002,55566677788,Ana Costa,200.00,2024,Maria José Santos,PT,13

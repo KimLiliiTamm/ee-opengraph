@@ -1,0 +1,5 @@
+cnpj,razao_social,data_inicio,data_fim,situacao,orgao_responsavel,qtd_processos
+33000167000101,Odebrecht S.A.,01/12/2016,01/12/2023,Finalizado,CGU/AGU,12
+60746948000112,Braskem S.A.,15/06/2017,,Vigente,CGU/AGU,5
+1234,Empresa Invalida,01/01/2020,01/01/2025,Vigente,CGU,1
+,Sem CNPJ LTDA,01/03/2021,01/03/2026,Vigente,CGU,2

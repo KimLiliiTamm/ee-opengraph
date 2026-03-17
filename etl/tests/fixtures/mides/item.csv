@@ -1,0 +1,3 @@
+municipal_item_id,municipal_contract_id,municipal_bid_id,item_number,description,quantity,unit_price,total_price
+it-1,ct-1,bid-1,1,Medicamento A,1000,1000.0,1000000.0
+it-2,ct-2,bid-2,1,Cimento,500,300.0,150000.0

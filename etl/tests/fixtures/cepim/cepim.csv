@@ -1,0 +1,6 @@
+CNPJ ENTIDADE;NOME ENTIDADE;NÚMERO CONVÊNIO;ÓRGÃO CONCEDENTE;MOTIVO IMPEDIMENTO
+12345678000195;Associação Beneficente do Norte;CONV-2020-001;Ministério da Saúde;Inadimplência na prestação de contas
+98765432000110;Instituto Cultural do Sul;CONV-2021-042;Ministério da Educação;Omissão no dever de prestar contas
+55667788000133;Fundação Social do Leste;CONV-2019-789;Ministério do Desenvolvimento Social;Inadimplência na prestação de contas
+1234;Nome Com CNPJ Invalido;CONV-2022-999;Ministério da Saúde;Motivo qualquer
+;Entidade Sem CNPJ;CONV-2023-111;Ministério da Educação;Omissão no dever de prestar contas

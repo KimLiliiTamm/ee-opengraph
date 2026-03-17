@@ -1,0 +1,10 @@
+{"id": "Q10001", "schema": "Person", "properties": {"name": ["JOAO DA SILVA"], "country": ["br"], "position": ["Deputado Federal"], "taxNumber": ["12345678901"], "startDate": ["2019-01-01"], "endDate": ["2023-01-01"]}, "datasets": ["br_transparency", "everypolitician"]}
+{"id": "Q10002", "schema": "Person", "properties": {"name": ["MARIA OLIVEIRA SANTOS"], "country": ["br"], "position": ["Senadora"], "startDate": ["2020-02-15"]}, "datasets": ["br_transparency"]}
+{"id": "Q10003", "schema": "Person", "properties": {"name": ["JOHN DOE"], "country": ["us"], "position": ["Senator"]}, "datasets": ["us_congress"]}
+{"id": "Q10004", "schema": "Company", "properties": {"name": ["ACME CORP"], "country": ["br"]}, "datasets": ["br_transparency"]}
+{"id": "Q10005", "schema": "Person", "properties": {"name": ["CARLOS ANDRADE PEREIRA"], "nationality": ["bra"], "position": ["Governador de Sao Paulo"]}, "datasets": ["everypolitician"]}
+{"id": "Q10006", "schema": "Person", "properties": {"name": ["ANNA SCHMIDT"], "country": ["de"], "position": ["Member of Brazilian Congress"]}, "datasets": ["everypolitician"]}
+{"id": "Q10007", "schema": "Person", "properties": {"name": [], "country": ["br"]}, "datasets": ["br_transparency"]}
+{"id": "", "schema": "Person", "properties": {"name": ["EMPTY ID"], "country": ["br"]}, "datasets": ["test"]}
+{"id": "Q10008", "schema": "Person", "properties": {"name": ["PEDRO HENRIQUE COSTA"], "country": ["br"], "position": ["Prefeito de Curitiba"], "taxNumber": ["98765432100", "ABC123"]}, "datasets": ["br_transparency"]}
+{"id": "Q10009", "schema": "Person", "properties": {"name": ["DUPLICATE PERSON"], "country": ["br"], "position": ["Vereador"]}, "datasets": ["test"]}

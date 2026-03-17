@@ -1,0 +1,6 @@
+cpf,nome,cargo_efetivo,tipo_punicao,data_publicacao,portaria,uf
+52998224725,João da Silva,Analista Administrativo,Demissão,15/03/2020,Portaria 123/2020,DF
+11144477735,Maria Souza,Técnico Judiciário,Cassação de Aposentadoria,01/07/2021,Portaria 456/2021,SP
+98765432100,Pedro Santos,Auditor Federal,Destituição,10/12/2022,Portaria 789/2022,RJ
+1234,Nome Invalido,Cargo Teste,Demissão,01/01/2023,Portaria 000/2023,MG
+,Sem CPF,Cargo Qualquer,Demissão,05/05/2023,Portaria 111/2023,BA

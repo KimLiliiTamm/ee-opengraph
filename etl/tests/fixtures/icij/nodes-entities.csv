@@ -1,0 +1,8 @@
+node_id,name,jurisdiction,country_codes,countries,address,sourceID,status,incorporation_date
+10001,OFFSHORE HOLDING BRASIL LTDA,BRA,BRA,Brazil,Rua Ficticia 123 Sao Paulo,Panama Papers,Active,2005-03-15
+10002,PANAMA GLOBAL SERVICES INC,PAN,PAN,Panama,Panama City,Panama Papers,Active,2010-01-20
+10003,CARIBBEAN INVESTMENTS SA,VGB,BRA;VGB,Brazil;British Virgin Islands,Rio de Janeiro,Paradise Papers,Struck Off,2008-07-01
+10004,BERMUDA TRADE CO,BMU,BMU,Bermuda,Hamilton,Panama Papers,Active,2012-11-10
+10005,BRAZIL EXPORT VENTURES,VGB,VGB,British Virgin Islands,Sao Paulo Brasil,Pandora Papers,Active,2015-06-22
+10006,,BRA,BRA,Brazil,Salvador,Panama Papers,Active,2020-01-01
+10007,EMPTY NODE NO ID,,,,,,Active,

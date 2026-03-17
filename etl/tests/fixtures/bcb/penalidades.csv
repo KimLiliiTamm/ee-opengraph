@@ -1,0 +1,6 @@
+CNPJ;Nome Instituição;Tipo Penalidade;Valor Penalidade;Número Processo;Data Decisão
+12.345.678/0001-95;Banco Exemplo S.A.;Multa;500.000,00;12345/2023;15/03/2023
+98.765.432/0001-10;Financeira Teste Ltda;Advertência;;67890/2022;20/06/2022
+12.345.678/0001-95;Banco Exemplo S.A.;Inabilitação;1.000.000,50;11111/2023;01/12/2023
+1234;Nome Com CNPJ Invalido;Multa;100,00;99999/2024;01/01/2024
+;Instituição Sem CNPJ;Advertência;;88888/2024;15/06/2024

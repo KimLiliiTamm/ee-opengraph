@@ -1,0 +1,4 @@
+judicial_case_id,party_name,party_cpf,party_cnpj,role
+jc-1,Fulano de Tal,12345678909,,AUTOR
+jc-1,Empresa X,,11.222.333/0001-81,REU
+jc-2,Empresa Y,,22.333.444/0001-90,AUTOR

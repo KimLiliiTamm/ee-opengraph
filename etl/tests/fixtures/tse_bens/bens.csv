@@ -1,0 +1,6 @@
+ano,tipo_eleicao,sigla_uf,id_municipio,id_municipio_tse,id_candidato_bd,cpf,titulo_eleitoral,sequencial_candidato,numero_candidato,nome_candidato,nome_urna_candidato,numero_partido,sigla_partido,nome_partido,tipo_bem,descricao_bem,valor_bem
+2022,Eleicao Ordinaria,SP,3550308,71072,1001,52998224725,001234567890,250000000001,1234,Joao da Silva,JOAO,13,PT,Partido dos Trabalhadores,37 - Quotas ou quinhoes de capital,Empresa ABC Ltda,150000.50
+2022,Eleicao Ordinaria,RJ,3304557,60011,1002,11144477735,009876543210,250000000002,5678,Maria Souza,MARIA,45,PSDB,Partido da Social Democracia Brasileira,31 - Apartamento,Apartamento no Leblon,850000.00
+2020,Eleicao Ordinaria,MG,3106200,41238,1003,98765432100,004567891230,250000000003,9012,Pedro Santos,PEDRO,15,MDB,Movimento Democratico Brasileiro,21 - Veiculo automotor terrestre,Toyota Corolla 2019,95000.75
+2022,Eleicao Ordinaria,SP,3550308,71072,1004,1234,,250000000004,3456,Nome Invalido,INVALIDO,22,PL,Partido Liberal,31 - Apartamento,Apartamento Centro,200000.00
+2022,Eleicao Ordinaria,BA,2927408,38490,1005,,005551234567,250000000005,7890,Sem CPF,SEMCPF,40,PSB,Partido Socialista Brasileiro,99 - Outros bens e direitos,Joias diversas,30000.00

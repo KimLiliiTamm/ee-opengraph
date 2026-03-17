@@ -1,0 +1,7 @@
+node_id_start,node_id_end,rel_type,link,sourceID
+20001,10001,officer,officer of,Panama Papers
+20002,10003,officer,officer of,Paradise Papers
+20004,10005,officer,officer of,Pandora Papers
+30001,10001,intermediary,intermediary of,Panama Papers
+30002,10002,intermediary,intermediary of,Panama Papers
+20003,10004,officer,officer of,Panama Papers

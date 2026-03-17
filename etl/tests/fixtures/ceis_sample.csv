@@ -1,0 +1,3 @@
+cpf_cnpj,nome,tipo_sancao,data_inicio,data_fim,motivo
+12345678000199,ACME Construtora LTDA,Impedimento,01/01/2023,31/12/2025,Fraude em licitacao
+52998224725,João da Silva,Inidoneidade,15/03/2022,,Corrupcao ativa
