@@ -1,4 +1,0 @@
-sq_candidato,cpf,nome,cargo,uf,municipio,ano,partido,nr_candidato
-100001,12345678901,João da Silva,PREFEITO,SP,SAO PAULO,2024,PL,11
-100002,98765432100,Maria José Santos,VEREADOR,RJ,RIO DE JANEIRO,2024,PT,13
-100001,-4,João da Silva,DEPUTADO FEDERAL,SP,,2022,PL,11

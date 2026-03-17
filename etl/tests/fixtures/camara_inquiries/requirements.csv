@@ -1,3 +1,0 @@
-requirement_id,inquiry_id,type,date,text,status,author_name,author_cpf,source_url,mentioned_cnpj
-req-1,camara-1,REQ,2026-02-20,Requer a convocação da empresa CNPJ 11.222.333/0001-81,Aprovado,FULANO DE TAL,12345678909,https://camara.leg.br/req/1,
-req-2,camara-1,REQ,2026-02-21,Solicita documentos complementares,Pendente,CICRANO,,https://camara.leg.br/req/2,22.333.444/0001-90
