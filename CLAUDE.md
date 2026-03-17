@@ -21,7 +21,8 @@ No accusations — surfaces connections and lets users draw conclusions.
    - API: https://ariregister.rik.ee (JSON, XML, CSV bulk)
    - Key: registrikood for companies, isikukood for persons
    - Free access including UBO data
-
+   - IMPORTANT: Since Nov 1 2024, bulk data files do NOT contain isikukood.
+Use API single queries for isikukood matching. Bulk data has names only.
 2. **ERJK** — political party donations, quarterly reports, enforcement actions
    - Data: https://www.erjk.ee (downloadable structured data)
    - Donation data includes: donor name, isikukood (partial), amount, date, party
@@ -75,6 +76,18 @@ All relationships with temporal properties where applicable (start_date, end_dat
 4. **Low confidence / ambiguous**: Flag for manual review or LLM disambiguation
 - Common Estonian names (Jaan Tamm, Andres Kask) require extra context
 - ERJK partial isikukood + name should match against full isikukood from Äriregister
+
+### Person node confidence levels
+Stored as `Person.confidence` (string) and `Person.needs_enrichment` (boolean).
+
+| Value | Meaning | Set when |
+|---|---|---|
+| `isikukood_verified` | isikukood confirmed from an authoritative source | ERJK donation data (partial ID resolved) or Äriregister single-query API |
+| `name_plus_context` | No isikukood, but name + DOB or name + shared company connection raises confidence | Entity resolution merge across two or more sources |
+| `name_only` | Only a name string available — identity unconfirmed | Äriregister bulk data (no isikukood since Nov 2024), lobbying register |
+
+`needs_enrichment = true` on any node below `isikukood_verified`.
+Enrichment pipeline should attempt Äriregister single-query API lookups to resolve isikukood and upgrade confidence.
 
 ## ETL conventions
 - Each pipeline is a standalone Python module in `etl/<source>/`
